@@ -1,0 +1,332 @@
+
+
+/* ========================= */
+/* SECTION */
+/* ========================= */
+
+.equipage-section {
+    padding: 120px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* BULLE */
+.equipage-bubble {
+    max-width: 1100px;
+    width: 100%;
+
+    padding: 60px;
+
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(10px);
+
+    border-radius: 20px;
+
+    box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+}
+
+/* INTRO IMAGE */
+.equipage-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.equipage-intro img {
+    width: 100%;
+    max-width: 500px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.equipage-caption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* TITRE */
+.equipage-title {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 50px;
+    color: #111;
+}
+
+/* ROW */
+.pilot-row {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+/* INVERSION */
+.pilot-row.reverse {
+    flex-direction: row-reverse;
+}
+
+/* IMAGE */
+.pilot-img img {
+    width: 280px;
+    border-radius: 15px;
+
+    box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+}
+
+/* TEXTE */
+.pilot-text {
+    flex: 1;
+
+    padding: 30px;
+
+    background: rgba(255,255,255,0.9);
+
+    border-radius: 15px;
+
+    border-left: 4px solid #1e3a8a;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* TITRE NOM */
+.pilot-text h3 {
+    margin-bottom: 15px;
+    color: #1e3a8a;
+}
+
+/* TEXTE */
+.pilot-text p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* HIGHLIGHT */
+.highlight {
+    font-weight: 600;
+    color: #111;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .pilot-row,
+    .pilot-row.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pilot-img img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+/* ========================= */
+/* HERO TITLE ÉQUIPAGE */
+/* ========================= */
+
+.equipage-title-hero {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+
+    color: #0f172a; /* bleu nuit */
+
+    margin-bottom: 25px;
+
+    letter-spacing: -1px;
+    line-height: 1.2;
+}
+
+/* NOMS */
+.equipage-title-hero span {
+    display: block;
+
+    font-size: 32px;
+    font-weight: 500;
+
+    margin-top: 8px;
+
+    color: #1e3a8a; /* bleu accent */
+}
+
+/* PETIT EFFET PREMIUM */
+.equipage-title-hero::after {
+    content: "";
+    display: block;
+
+    width: 60px;
+    height: 3px;
+
+    background: #1e3a8a;
+
+    margin: 18px auto 0;
+
+    border-radius: 2px;
+}
+
+/* CTA */
+/* ========================= */
+
+.cta {
+    padding: 120px 20px;
+    text-align: center;
+    color: white;
+}
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+.footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+/* CTA PREMIUM */
+/* ========================= */
+
+.cta-premium {
+    position: relative;
+    padding: 140px 20px;
+
+    background: url("/static/images/route_desert1.jpg") center/cover no-repeat;
+
+    text-align: center;
+    color: white;
+}
+
+/* OVERLAY DARK */
+.cta-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.85),
+        rgba(0,0,0,0.4)
+    );
+}
+
+/* CONTENT */
+.cta-content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* TITRE */
+.cta-content h2 {
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+
+/* TEXTE */
+.cta-sub {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+/* BOUTON CENTER */
+.cta-actions {
+    display: flex;
+    justify-content: center;
+    
+}
+.btn-big {
+    padding: 20px 50px;
+    font-size: 20px;
+    font-weight: 600;
+
+    border-radius: 50px;
+
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+
+    box-shadow:
+        0 15px 40px rgba(30,58,138,0.5),
+        0 0 20px rgba(37,99,235,0.4);
+
+    letter-spacing: 0.5px;
+
+    transition: all 0.3s ease;
+}
+
+.btn-big:hover {
+    transform: translateY(-4px) scale(1.1);
+
+    box-shadow:
+        0 20px 50px rgba(30,58,138,0.7),
+        0 0 30px rgba(37,99,235,0.6);
+}
+.btn-big {
+    animation: pulseGlow 2s infinite;
+}
+
+@keyframes pulseGlow {
+    0% { box-shadow: 0 0 0 rgba(37,99,235,0.4); }
+    50% { box-shadow: 0 0 25px rgba(37,99,235,0.7); }
+    100% { box-shadow: 0 0 0 rgba(37,99,235,0.4); }
+}
+/* ========================= */
+/* FOOTER PREMIUM */
+/* ========================= */
+
+.footer-premium {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.footer-premium p {
+    margin-bottom: 10px;
+    opacity: 0.7;
+}
+
+.footer-premium a {
+    color: #60a5fa;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-premium a:hover {
+    text-decoration: underline;
+}
+
+/* ========================= */
+/* ========================= */
+/* SCROLL INDICATOR CLEAN */
+/* ========================= */
+
+.scroll-indicator {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-size: 32px;
+    font-weight: bold;
+
+    color: #1e3a8a;
+
+    z-index: 9999;
+
+    opacity: 1;
+    pointer-events: none;
+
+    animation: bounce 1.5s infinite;
+    transition: opacity 0.4s ease;
+
+    text-shadow: 0 0 10px rgba(30,58,138,0.6);
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translate(-50%, 0); }
+    50% { transform: translate(-50%, 12px); }
+}
+
