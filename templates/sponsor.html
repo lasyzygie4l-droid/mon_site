@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='sponsor.css') }}">
+{% endblock %}
+
+{% block content %}
+
+ <div class="scroll-indicator">↓</div>
+ 
+ <section class="equipage-section">
+
+     <div class="equipage-bubble">
+
+         <!-- INTRO IMAGE BINOME -->
+ 
+ <div class="equipage-intro">
+
+     <h1 class="equipage-title-hero">
+         NOS PARTENAIRES
+     </h1>
+
+     <img src="{{ url_for('static', filename='images/promo.jpg') }}">
+
+ </div>
+
+           
+         <!-- TITLE -->
+         <h2 class="equipage-title">À VENIR ...</h2>
+
+         <!-- ELLEN -->
+         <div class="pilot-row">
+
+             
+
+            
+
+         </div>
+ </section>
+ <!-- ========================= -->
+ <!-- CTA FINAL -->
+ <!-- ========================= -->
+ <section class="cta-premium">
+
+     <!-- OVERLAY -->
+     <div class="cta-overlay"></div>
+
+     <div class="cta-content">
+
+         <h2>Et si vous faisiez partie du voyage ?</h2>
+
+         <p class="cta-sub">
+             Une aventure humaine, engagée et inoubliable nous attend.  
+             Chaque soutien nous rapproche un peu plus du départ.
+         </p>
+
+         <div class="cta-actions">
+ <a href="/financer" class="btn-main btn-big">Soutenir l'équipage de la Syzygie</a>        
+
+     </div>
+
+ </section>
+
+ <footer class="footer-premium">
+     <p>En savoir plus sur le 4L Trophy</p>
+     <a href="https://www.4ltrophy.com/" target="_blank">
+         www.4ltrophy.com
+     </a>
+ </footer>
+
+
+ {% endblock %}
